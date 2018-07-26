@@ -1,5 +1,5 @@
 require 'sinatra/base'
-
+require 'pry'
 class App < Sinatra::Base
 
   get "/newteam" do
@@ -14,6 +14,7 @@ class App < Sinatra::Base
     @small_forward = params["small_forward"]
     @power_forward = params ["power_forward"]
     @center = params["center"]
+    binding.pry
     erb :team
   end
 end
