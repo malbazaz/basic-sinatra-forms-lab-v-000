@@ -7,6 +7,7 @@ class App < Sinatra::Base
   end
 
   post "/newteam" do
+    binding.pry
     @name = params["name"]
     @coach = params["coach"]
     @point_guard = params ["point_guard"]
@@ -14,7 +15,7 @@ class App < Sinatra::Base
     @small_forward = params["small_forward"]
     @power_forward = params ["power_forward"]
     @center = params["center"]
-    binding.pry
+
     erb :team
   end
 end
