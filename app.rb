@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
 
   post "/newteam" do
-    binding.pry
+    #binding.pry
 #    @name = params[:name]
 #    @coach = params[:coach]
 #    @point_guard = params [:pg]
